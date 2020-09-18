@@ -95,9 +95,6 @@ class TransformView: UIView {
             ges.scale = 1
 
         }
-        if ges.state == .ended {
-
-        }
         
     }
         
@@ -116,9 +113,6 @@ class TransformView: UIView {
                         
             ges.setTranslation(.zero, in: imageView.superview)
             
-        }
-        if ges.state == .ended {
-                        
         }
         
     }
@@ -142,10 +136,6 @@ class TransformView: UIView {
             ges.rotation = 0
             
         }
-        if ges.state == .ended {
-                        
-            
-        }
         
     }
     
@@ -167,11 +157,9 @@ class TransformView: UIView {
         }
         return image
     }
-
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 
 }
